@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet"/>
+    <style>
+        #wrapper {
+            background-color: antiquewhite;
+        }
+        #bxslider{
+            margin-left: 300px;
+        }
+        h1{
+            margin-top: 10px;
+            text-align: center;
+            font-family: "Colonna MT","Helvetica Neue",sans-serif;
+        }
+        footer {
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#travelling-slider").bxSlider({
+                mode: 'fade',
+                captions: true,
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 900,
+                speed: 300,
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <header><h1>India Tourism</h1></header>
+        <div id="bxslider">
+        <ul id="travelling-slider">
+            <li><img src="travelling1.jpg" title="Nature" width="900px" height="600px"/></li>
+            <li><img src="travelling3.jpg" title="Temple" width="900px" height="600px"/></li>
+            <li><img src="travelling4.jpg" title="Travelling" width="900px" height="600px"/></li>
+            <li><img src="travelling5.jpg" title="Peace" width="900px" height="600px"/></li>
+        </ul>
+        </div>
+        <footer>
+            <p>Copyright &copy;&nbsp;
+                <script>
+                    var today= new Date();
+                    document.write(today.getFullYear());
+                </script>
+                &nbsp;India Tourism<br>
+                Jeni Sanjaybhai Patel
+            </p>
+        </footer>
+    </div>
+</body>
+<html>
